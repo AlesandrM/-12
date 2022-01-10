@@ -5,12 +5,12 @@ public class StatsService {
     //Сумма всех продаж
 
     public int salesCalculation(int[] sales) {
-        int sum = 0;
+        int sumSales = 0;
         for (int sale : sales) {
-            sum += sale;
+            sumSales += sale;
         }
 
-        return sum;
+        return sumSales;
 
     }
 
@@ -95,9 +95,9 @@ public class StatsService {
         int countMont = 0;
 
         for (int sale : sales) {
-          if (sale > avg) {
-              countMont++;
-          }
+            if (sale > avg) {
+                countMont++;
+            }
         }
         return countMont;
     }
